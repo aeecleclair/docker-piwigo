@@ -84,6 +84,7 @@ services:
       - TZ=Etc/UTC
     volumes:
       - /path/to/appdata/config:/config
+	  - /path/to/appdata/plugins:/app/www/public/plugins
       - /path/to/appdata/gallery:/gallery
     ports:
       - 80:80

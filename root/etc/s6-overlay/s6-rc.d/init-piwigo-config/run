@@ -28,6 +28,14 @@ if [[ -f /gallery/index.php ]]; then
     echo ""
     echo "*******************************************************************************"
 fi
+if [[ -d /config/www/plugins/ ]]; then
+	echo "*******************************************************************************"
+    echo ""
+	echo "Migrating old install 2..."
+	mv /config/www/plugins /app/www/public/plugins
+	echo ""
+    echo "*******************************************************************************"
+fi
 
 shopt -s globstar dotglob
 
