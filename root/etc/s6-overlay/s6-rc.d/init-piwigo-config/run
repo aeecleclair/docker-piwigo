@@ -47,7 +47,6 @@ done
 
 symlinks=(
     /app/www/public/language
-    /app/www/public/plugins
     /app/www/public/local
     /app/www/public/themes
     /app/www/public/_data
