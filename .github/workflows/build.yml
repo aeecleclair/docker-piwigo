@@ -30,7 +30,7 @@ jobs:
           images: |
             ${{ secrets.DOCKER_REGISTRY_IDENTIFER }}/piwigo
           tags: |
-            type=semver,pattern={{version}}
+            type=match,pattern=\d.\d.\d.\d
 
       - name: Build and push
         uses: docker/build-push-action@v5
